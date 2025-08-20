@@ -1,0 +1,16 @@
+
+
+
+
+
+
+const CryptoData = {
+    
+    labels: [
+
+    ],
+
+    database: [
+
+    ]
+}
