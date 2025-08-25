@@ -31,8 +31,8 @@ import {
             fetch("https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=7")
         .then((res) => res.json())
         .then((data) => {
-            const priceData = data.prices((p: [number, number]) => p[1]);
-            const dataLabels = data.prices((p: [number, number]) => 
+            const priceData = data.prices.map((p: [number, number]) => p[1]);
+            const dataLabels = data.prices.map((p: [number, number]) => 
             new Date(p[0]).toLocaleDateString()
         );
 
@@ -47,8 +47,8 @@ import {
                 {
                     label: "Bitcoin (USD)",
                     data: prices,
-                    borderColor: "rgb(75, 192, 192)",
-                    backgroundColor: "rgb(75, 192, 192)",
+                    borderColor: "rgb(218,112,214)",
+                    backgroundColor: "rgb(221,160,221)",
                 },
             ],
         };

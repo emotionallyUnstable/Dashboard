@@ -20,7 +20,7 @@ function App() {
       <div className='border-1 h-[201px] border-red-800'><ActiveUsersBar /></div>
       <div className='border-1 h-[201px] border-red-800'><TaskBoard /></div>
 
-      <div className='border-1 h-[201px] border-red-800'><CryptoLine /></div>
+      <div className='border-1 h-[201px] w-[400px] border-red-800'><CryptoLine /></div>
     </div>
     </div>
     </>
